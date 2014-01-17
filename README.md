@@ -35,6 +35,13 @@ Finally, initiate the generator:
 $ yo seed
 ```
 
+Now run
+```
+grunt server
+```
+and grunt should automatically start a session in your web browser!
+
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
