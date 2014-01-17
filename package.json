@@ -1,6 +1,6 @@
 {
   "name": "generator-seed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yeoman generator to create web app based on angular and express",
   "keywords": [
     "yeoman-generator"
