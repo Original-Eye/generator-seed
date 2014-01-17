@@ -1,6 +1,6 @@
 {
   "name": "generator-seed",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
@@ -8,9 +8,9 @@
   "homepage": "https://github.com/Original-Eye/generator-seed",
   "bugs": "https://github.com/Original-Eye/generator-seed/issues",
   "author": {
-    "name": "Steve",
+    "name": "Steve Clements",
     "email": "steve@originaleye.co.uk",
-    "url": "https://github.com/Original-Eye"
+    "url": "https://github.com/sjclemmy"
   },
   "main": "app/index.js",
   "repository": {
@@ -18,7 +18,7 @@
     "url": "git://github.com/Original-Eye/generator-seed.git"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "mocha"
   },
   "dependencies": {
     "yeoman-generator": "~0.14.0"
