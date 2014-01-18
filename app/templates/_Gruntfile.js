@@ -5,7 +5,6 @@ var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
 
-
 module.exports = function(grunt) {
 
   var yeomanConfig = {
@@ -108,8 +107,6 @@ module.exports = function(grunt) {
       }
     },
   });
-
-  console.log(grunt.config.data.connect.livereload);
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
