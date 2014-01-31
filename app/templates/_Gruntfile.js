@@ -5,6 +5,7 @@ var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
 
+
 module.exports = function(grunt) {
 
   var yeomanConfig = {
@@ -106,11 +107,20 @@ module.exports = function(grunt) {
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
       }
     },
+    shell: {
+        selenium: {
+            command: 'node node_modules/protractor/bin/webdriver-manager start'
+        }
+    }
   });
+  
+
+  console.log(grunt.config.data.connect.livereload);
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-open');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
@@ -123,4 +133,6 @@ module.exports = function(grunt) {
       'watch'
     ]);
   });
+
+  grunt.registerTask ('test', ['shell']);
 };
