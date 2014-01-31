@@ -109,6 +109,9 @@ module.exports = function(grunt) {
     },
     shell: {
         selenium: {
+          options: {                      
+                          stdout: true
+                      },
             command: 'node node_modules/protractor/bin/webdriver-manager start'
         }
     }
