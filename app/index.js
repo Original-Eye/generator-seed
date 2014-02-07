@@ -46,12 +46,12 @@ SeedGenerator.prototype.app = function app() {
 
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
-  this.template('client/index.html', 'client/index.html');
+  this.template('client/views/index.html', 'client/views/index.html');
   this.template('client/js/app.js', 'client/js/app.js');
   this.template('client/js/controllers/login.js', 'client/js/controllers/login.js');
   this.template('client/js/controllers/main.js', 'client/js/controllers/main.js');
-  this.template('client/views/login.html', 'client/views/login.html');
-  this.template('client/views/main.html', 'client/views/main.html');
+  this.template('client/views/partials/login.html', 'client/views/partials/login.html');
+  this.template('client/views/partials/main.html', 'client/views/partials/main.html');
   //don't want to template this as it's got lots of variables templated for the grunt file itself.
   this.copy('_Gruntfile.js', 'Gruntfile.js');
   //client directory and contents

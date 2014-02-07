@@ -108,12 +108,18 @@ module.exports = function(grunt) {
       }
     },
     shell: {
-        selenium: {
+        startSelenium: {
           options: {                      
                           stdout: true
                       },
-            command: 'node node_modules/protractor/bin/webdriver-manager start'
-        }
+            command: 'node node_modules/protractor/bin/webdriver-manager start &'
+        },
+        testServer: {
+          options: {                      
+                          stdout: true
+                      },
+            command: 'node_modules/jasmine-node/bin/jasmine-node '
+        },
     }
   });
   
