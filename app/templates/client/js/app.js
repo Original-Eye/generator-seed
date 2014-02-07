@@ -9,11 +9,11 @@ angular.module('<%= _.slugify(applicationName) %>', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/partials/main.html',
         controller: 'MainCtrl'
       })
       .when('/login', {
-        templateUrl: 'views/login.html',
+        templateUrl: 'views/partials/login.html',
         controller: 'LoginCtrl'
       })
       .otherwise({
