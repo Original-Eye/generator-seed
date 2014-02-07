@@ -112,7 +112,7 @@ module.exports = function(grunt) {
           options: {                      
                           stdout: true
                       },
-            command: 'node node_modules/protractor/bin/webdriver-manager start &'
+            command: 'node node_modules/protractor/bin/webdriver-manager start'
         },
         testServer: {
           options: {                      
