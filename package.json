@@ -1,6 +1,7 @@
 {
   "name": "generator-seed",
-  "version": "0.0.7",
+  "version": "0.0.8",
+  "license": "MIT",
   "description": "Yeoman generator to create web app based on angular and express",
   "keywords": [
     "yeoman-generator"
@@ -33,7 +34,7 @@
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
   },
-  "licenses": [
+  "license": [
     {
       "type": "MIT"
     }
