@@ -14,7 +14,7 @@ app.set('view engine', 'html');
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-// app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../client')));
 app.use(app.router);
 
 app.get ('/', routes.index);
