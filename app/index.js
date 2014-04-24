@@ -19,7 +19,7 @@ var SeedGenerator = module.exports = function SeedGenerator(args, options, confi
     this.AssetPath = 'client';
 
     require('crypto').randomBytes(16, function(ex, buf) {
-        this.sessionKey = buf.toString('hex');
+        this.randomSessionKey = buf.toString('hex');
     }.bind(this));
 
 
