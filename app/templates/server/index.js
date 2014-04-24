@@ -17,6 +17,11 @@ app.use(express.methodOverride());
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(app.router);
 
+app.use(express.cookieParser());
+
+//inserts random session key
+app.use(express.session({secret: '<%= _.slugify(randomSessionKey) %>'}));
+
 app.get ('/', routes.index);
 app.get ('/api/name', api.name);
 
