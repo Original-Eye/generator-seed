@@ -32,7 +32,8 @@
     "mocha": "~1.14.0",
     "grunt": "~0.4.2",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-jshint": "~0.10.0"
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-bump": "0.0.13"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
