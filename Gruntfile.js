@@ -43,6 +43,17 @@ module.exports = function(grunt) {
 
     grunt.registerTask('publish', function (target) {
 
+      /*
+      TODO
+      This function should:
+      1. check that git is upto date otherwise: fail
+      2. run npm test: otherwise fail.
+      3. check that the published npm version number matches the local one.
+      4. run grunt publish: fail and rollback on any error.
+      5. run npm publish: fail and rollback on any error.
+
+       */
+
     	grunt.task.run(['bump:patch']);
     });
 
