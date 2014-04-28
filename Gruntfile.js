@@ -39,6 +39,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-bump');
 
+    grunt.registerTask('default', ['watch']);
+
     grunt.registerTask('publish', function (target) {
 
     	grunt.task.run(['bump:patch']);
