@@ -27,4 +27,5 @@ app.get ('/api/name', api.name);
 
 app.listen(port);
 console.log('running...');
+/*jshint quotmark:double */
 console.log("Express server listening on port %d in %s mode", port, app.settings.env);

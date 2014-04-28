@@ -1,7 +1,11 @@
 {
   "name": "generator-seed",
   "version": "0.0.10",
-  "license": "MIT",
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
   "description": "Yeoman generator to create web app based on angular and express",
   "keywords": [
     "yeoman-generator"
@@ -25,7 +29,10 @@
     "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "~1.14.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.10.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
@@ -33,10 +40,5 @@
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.2.10"
-  },
-  "license": [
-    {
-      "type": "MIT"
-    }
-  ]
+  }
 }
