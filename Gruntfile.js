@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         		commitFiles: ['package.json'],
         		createTag: false,
         		push: true,
-        		pushTo: 'origin/master'
+        		pushTo: 'origin'
 
         	}
         }
